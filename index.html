@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
-    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/reset.css"> -->
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
+        <!--
+        table - семантичний тег для створення таблиць 
+        caption - семантичний тег Заголовок/Назва самої таблиці, його пишем всередині тегу table
+        thead - table head - шапка таблиці (назви стовпців і колонок)
+        tr - table row - рядочок шапки
+        th - table head - колоночка шапки
+        tbody - table body - тіло таблички
+        tr - table row - рядочки
+        td - table data - колоночки
+        tfoot - table footer - низ таблички де підбиваються підсумки наприклад
+
+        td та tr мають свій display: table-cell, по замовч вони не мають марджинів
+
+        <td colspan="2">Summary:4</td>
+        -colspan='2' - дозволяє обєднати дві комірки разом в колоночкі
+        -rowspan='2' - дозволяє обєднати два комірки разом в рядочку
+
+        colspan i rowspan - треба слідкувати за кількістю рядків та колонок, щоб вони не перевищували загальну кількість
+         -->
+    <table>
+        <caption>I am the name fo this table</caption>
+        <thead>
+            <tr>
+                <th>
+                    Is semantic
+                </th>
+                <th>
+                    Elements
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Semantic</td>
+                <td>header, footer</td>
+            </tr>
+            <tr>
+                <td>Nosemantic</td>
+                <td>div, span</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- <td>Summary:2</td> -->
+                <td colspan="2">Summary:4</td>
+            </tr>
+        </tfoot>
+
+
+
+    </table>
     
 </body>
 </html>

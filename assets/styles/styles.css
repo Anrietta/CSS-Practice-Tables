@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    border: 2px solid black;
+    /*borer-collaps - властивість для таблиць, значення collapse - зклеїти краї комірок, separate - відєднати краї комірок. між ними буде відстань
+    border-spacing - властивість щоб задавати відстань в пікселях коли border-collapse:separate  */
+    border-collapse: separate;
+    border-spacing: 1px;
+
+} 
+
+td, th {
+    border: 2px solid black;
+}
